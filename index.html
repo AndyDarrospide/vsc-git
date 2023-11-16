@@ -19,13 +19,23 @@
     <form>
         <div>
             <label for="Nombre">Nombre</label>
-        <input id="Nombre" type="text" placeholder="Ingresa tu nombre">
+        <input id="Nombre" type="text" placeholder="Ingresa tu nombre" required>
         </div>
         <div>
             <label for="Descripción">Descripción</label>
-        <textarea name="Descripción" id="Descripción" cols="30" rows="10"></textarea>
+        <textarea name="Descripción" id="Descripción" cols="30" rows="10" placeholder="Ingresa la descripción..." required></textarea>
         </div>
-        
+        <div>
+            <select name="País" id="País" required>
+                <option value=""selected disabled>Seleccionar país</option>
+                <option value="UY">Uruguay</option>
+                <option value="ARG">Argentina</option>
+                <option value="COL">Colombia</option>
+                <option value="CHL">Chile</option>
+                <option value="BOL">Bolivia</option>
+            </select>
+        </div>
+        <button type="button">Enviar</button>
     </form>
 
     
